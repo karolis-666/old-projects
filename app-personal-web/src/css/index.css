@@ -1,0 +1,57 @@
+/* global */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 0.96rem;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(235, 235, 235);
+}
+
+.title {
+  font-size: 2.23rem;
+}
+
+.fadeIn {
+  animation: 600ms fadeIn forwards;
+}
+
+.fadeOut {
+  animation: 450ms fadeOut forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0, 0px);
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 1rem;
+  }
+
+  body {
+    width: 100%;
+  }
+}
